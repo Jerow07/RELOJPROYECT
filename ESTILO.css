@@ -4,19 +4,16 @@ html, body {
     padding: 0;
     font-family:'Times New Roman';
 }
-
-h1{ 
-    margin: 0;
-    text-align: center; 
-    font-size: 50px ; 
-}
 .confondo{ 
     height: 400px;width: 100%;  
     background: url(bosque\ hd.jpg)no-repeat;
     background-size: cover;
     color:white;
-   
-
+}
+h1{ 
+    margin: 0;
+    text-align: center; 
+    font-size: 50px ; 
 }
 .texto { 
     font-size: 25px;
@@ -25,12 +22,19 @@ h1{
     font-size: 70px;
     
 }
+.boton{
+    margin-left: 90%;
+    margin-top: 5%;
+ }
 .partedeabajosinfondo {
     font-size: 30px;
     display: flex;
     justify-content: space-around;
 }
+<<<<<<< HEAD
 .boton{
     margin-left: 90%;
     margin-top: 8%;
  }
+=======
+>>>>>>> 7e29ca30a308f1646be3d983b4c82a0b565b35c7
