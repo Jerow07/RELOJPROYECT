@@ -1,7 +1,9 @@
 html, body {
-    border-color: rgb(red, green, blue);
-    font-size: 36px;
+    border-style: solid;
+    border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */  
+  font-size: 30px;
     margin: 0;
+    margin-left: 1px;
     padding: 0;
     font-family:'Times New Roman';
 }
