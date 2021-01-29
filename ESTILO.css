@@ -2,32 +2,45 @@ html, body {
     border-style: solid;
     border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */  
   font-size: 30px;
-    margin: 0;
+    margin: 0px;
     margin-left: 1px;
-    padding: 0;
+    margin-right: 0px;
+    padding: 0px;
     font-family:'Times New Roman';
 }
-.confondo{ 
-    height: 400px;width: 100%;  
+.confondo {
+   
+    height: 600px;width: 100%;
+    
     background: url(bosque\ hd.jpg)no-repeat;
     background-size: cover;
+    background-position-x: right : 5%;
     color:white;
 }
-h1{ 
-    margin: 0;
-    text-align: center; 
-    font-size: 50px ; 
+.citadebuendia { 
+    margin-top:5%;
+    font-size: 100%;
+    
+}
+h1{
+    color:white;
+    margin: 1;
+    margin-bottom: 2%;
+    text-align: left;
+
+    font-size: 160px ; 
 }
 .cita { 
-    font-size: 25px;
+    font-size: 20px;
 }
 .hora { 
-    font-size: 70px;
+    font-size:  2170px;????? esto de que es??
     
 }
 .boton{
-    margin-left: 90%;
     margin-top: 5%;
+    margin-left: 0%;
+    margin-top: 101000%;
  }
 .partedeabajosinfondo {
     font-size: 30px;
@@ -36,5 +49,7 @@ h1{
 }
 .boton{
     margin-left: 90%;
-    margin-top: 8%;
+    margin-top: 0%;
  }
+porque hay dos boton?
+aprender a movertexto
