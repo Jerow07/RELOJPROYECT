@@ -1,55 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 html, body {
-    border-style: solid;
-    border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */  
-  font-size: 30px;
+    height: 100%;
+    font-size: 30px;
     margin: 0px;
-    margin-left: 1px;
-    margin-right: 0px;
     padding: 0px;
-    font-family:'Times New Roman';
+    font-family:sans-serif;
 }
 .confondo {
-   
-    height: 600px;width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
     
     background: url(bosque\ hd.jpg)no-repeat;
     background-size: cover;
-    background-position-x: right : 5%;
+    background-position-x: center;
     color:white;
 }
+.abajo {
+    display: flex;
+    justify-content: space-around;
+}
 .citadebuendia { 
-    margin-top:5%;
     font-size: 100%;
-    
+}
+.citadebuendia span {
+    margin-left: 35px;
 }
 h1{
     color:white;
-    margin: 1;
-    margin-bottom: 2%;
     text-align: left;
-
     font-size: 160px ; 
 }
 .cita { 
     font-size: 20px;
+    padding: 200px;
 }
-.hora { 
-    font-size:  2170px;????? esto de que es??
-    
+.cita p { 
+    margin-bottom: 40px;
 }
-.boton{
-    margin-top: 5%;
-    margin-left: 0%;
-    margin-top: 101000%;
- }
 .partedeabajosinfondo {
+    background: #ddd;
+    padding: 100px;
     font-size: 30px;
     display: flex;
     justify-content: space-around;
 }
-.boton{
-    margin-left: 90%;
-    margin-top: 0%;
- }
-porque hay dos boton?
-aprender a movertexto
+.partedeabajosinfondo span {
+    font-size: 16px;
+}
+.partedeabajosinfondo h2 {
+    margin-bottom: 20px
+}
+.boton {
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    font-size:20px;
+    padding: 5px 25px 5px 10px;
+    border-radius: 70px;
+}
+.conborde{
+    border-right: 2px solid;
+    border-color:grey;
+}
+.iconoboton{
+    position: absolute;
+    margin-top: 2px;
+}
+.reloj {
+    margin: 100px -350px;
+}

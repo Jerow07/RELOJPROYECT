@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLOCKAPP</title>
-        <link rel="stylesheet" href="ESTILO.css">
+    <link rel="stylesheet" href="ESTILO.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 <body>
     <section class="confondo">
@@ -12,12 +13,16 @@
             <p>Not every day is going to offer us a chance to save somebody's life, but every day offers us an opportunity to affect one.</p>
             <b>Mark Bezos</b>
         </div>
-        <div class="reloj">
-            <div class="citadebuendia">Good morning,its currently</div>
-            <h1>11:37</h1>
-            <span>in Buenos Aires, Argentina</span>
+        <div class="abajo">
+            <div class="reloj">
+                <div class="citadebuendia"><ion-icon class="iconoboton" name="sunny"></ion-icon><span>Good morning,its currently</span></div>
+                <h1>11:37</h1>
+                <span>in Buenos Aires, Argentina</span>
+            </div>
+            <div>
+                <button class="boton">more<ion-icon class="iconoboton" name="chevron-down-circle"></ion-icon></button> 
+            </div>
         </div>
-        <button class="boton">more</button> 
     </section>
     <section class="partedeabajosinfondo">
         <div>
@@ -30,6 +35,7 @@
                 <h2>295</h2>
             </div>
         </div>
+        <div class="conborde"></div>
         <div>
             <div>
                 <span>DAY OF THE WEEK</span>
