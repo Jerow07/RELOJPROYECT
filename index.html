@@ -8,19 +8,19 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 <body>
-    <section class="confondo">
+    <section class="confondo" id="confondo">
         <div class="cita">
             <p>Not every day is going to offer us a chance to save somebody's life, but every day offers us an opportunity to affect one.</p>
             <b>Mark Bezos</b>
         </div>
         <div class="abajo">
             <div class="reloj">
-                <div class="citadebuendia"><ion-icon class="iconoboton" name="sunny"></ion-icon><span>Good morning,its currently</span></div>
-                <h1>11:37</h1>
+                <div class="citadebuendia" id="citadesaludo"><ion-icon class="iconoboton" name="sunny"></ion-icon><span>Good morning, it's currently</span></div>
+                <h1 id="hora"></h1>
                 <span>in Buenos Aires, Argentina</span>
             </div>
             <div>
-                <button class="boton">more<ion-icon class="iconoboton" name="chevron-down-circle"></ion-icon></button> 
+                <button id="boton" class="boton" onclick="deslizar()">more<ion-icon class="iconoboton" name="chevron-down-circle"></ion-icon></button> 
             </div>
         </div>
     </section>
@@ -32,20 +32,21 @@
             </div>
             <div>
                 <span>DAY OF THE YEAR</span>
-                <h2>295</h2>
+                <h2 id="diadelanio">295</h2>
             </div>
         </div>
         <div class="conborde"></div>
         <div>
             <div>
                 <span>DAY OF THE WEEK</span>
-                <h2>5</h2>
+                <h2 id="diadelasemana">5</h2>
             </div>
             <div>
-                <span>WEEK NUMBER</span>
-                <h2>42</h2>
+                <span>DAY OF THE MONTH</span>
+                <h2 id="diadelmes">42</h2>
             </div>
         </div>     
     </section>    
+    <script src="main.js"></script>
 </body>
 </html>

@@ -17,9 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     
-    background: url(bosque\ hd.jpg)no-repeat;
-    background-size: cover;
-    background-position-x: center;
+    background: url("bosque-dia.jpg") no-repeat;
     color:white;
 }
 .abajo {
