@@ -9,26 +9,30 @@
 </head>
 <body>
     <section class="confondo" id="confondo">
+        <div class="fondo">
+            <video id="videoDeFondo" src="paisaje-dia.mp4" autoplay muted loop start="15"></video>
+        </div>
         <div class="cita">
-            <p>Not every day is going to offer us a chance to save somebody's life, but every day offers us an opportunity to affect one.</p>
-            <b>Mark Bezos</b>
+            <p id="frase">Not every day is going to offer us a chance to save somebody's life, but every day offers us an opportunity to affect one.</p>
+            <ion-icon name="refresh" onclick="cambiarfrase()"></ion-icon>
+            <b id="persona">Mark Bezos</b>
         </div>
         <div class="abajo">
             <div class="reloj">
                 <div class="citadebuendia" id="citadesaludo"><ion-icon class="iconoboton" name="sunny"></ion-icon><span>Good morning, it's currently</span></div>
                 <h1 id="hora"></h1>
-                <span>in Buenos Aires, Argentina</span>
+                <span id="geolocalizacion">in Buenos Aires, Argentina</span>
             </div>
             <div>
-                <button id="boton" class="boton" onclick="deslizar()">more<ion-icon class="iconoboton" name="chevron-down-circle"></ion-icon></button> 
+                <button id="boton" class="boton" onclick="deslizar()">MORE<ion-icon class="iconoboton" name="chevron-down-circle"></ion-icon></button> 
             </div>
         </div>
     </section>
-    <section class="partedeabajosinfondo">
+    <section id="partesinfondo" class="partedeabajosinfondo">
         <div>
             <div>
                 <span>CURRENT TIMEZONE</span>
-                <h2>America, Buenos Aires</h2>
+                <h2 id="geolocalizacion2">America, Buenos Aires</h2>
             </div>
             <div>
                 <span>DAY OF THE YEAR</span>

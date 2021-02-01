@@ -2,8 +2,6 @@ var reloj = document.getElementById("hora");
 
 var tiempo = new Date();
 
-
-
 var diadelanio = document.getElementById("diadelanio")
 
 var start = new Date(tiempo.getFullYear(), 0, 0);
@@ -41,15 +39,52 @@ setInterval(function actualizarHora() {
     reloj.innerHTML = hora + ":" + minutos + ":" + segundos
 }, 1000)
 
-var imagenfondohora = document.getElementById("confondo")
 var citadesaludo = document.getElementById("citadesaludo")
 
+var videofondo = document.getElementById("videoDeFondo")
+
 if(tiempo.getHours() > 19 || tiempo.getHours()< 6 ) {
-    imagenfondohora.style.background = "url('bosque-noche.jpg')no-repeat"
+    videofondo.setAttribute('src', "paisaje-noche.mp4#t=15")
     citadesaludo.innerHTML = "<ion-icon class='iconoboton' name='moon'></ion-icon><span>Good night, it's currently</span>"
 }
 function deslizar(){
+    
     var botondezlis = document.getElementById("boton")
-    botondezlis.innerHTML = "LESS<ion-icon class='iconoboton' name='chevron-up-circle'></ion-icon>"
+    console.log(botondezlis.innerHTML)
+    let height = document.getElementById("partesinfondo").offsetHeight;
 
+    if(botondezlis.innerHTML == 'MORE<ion-icon class="iconoboton md hydrated" name="chevron-down-circle" role="img" aria-label="chevron down circle"></ion-icon>') {
+        botondezlis.innerHTML = 'LESS<ion-icon class="iconoboton md hydrated" name="chevron-up-circle" role="img" aria-label="chevron up circle"></ion-icon>'
+        scrollTo({  top: height, behavior: 'smooth'})
+    } else {
+        botondezlis.innerHTML = 'MORE<ion-icon class="iconoboton md hydrated" name="chevron-down-circle" role="img" aria-label="chevron down circle"></ion-icon>'
+        scrollTo({  top  : 0, behavior: 'smooth'})
+    
+    }
+
+}
+
+var frases = [
+    {
+        "persona": "Mark Bezos",
+        "frase": "Tu vieja dice que tu vieja"
+    },
+    {
+        "persona": "Jeff Bezos",
+        "frase": "Tengo toda la plata"
+    },
+    {
+        "persona": "Mark Zuckerberg",
+        "frase": "Facebook es una garcha"
+    },
+]
+
+function cambiarfrase() {
+   var frase = document.getElementById("frase")
+   var persona = document.getElementById("persona")
+
+   var indice = Math.floor(Math.random() * (3 - 0))
+
+   frase.innerHTML = frases[indice].frase
+   persona.innerHTML = frases[indice].persona
 }
