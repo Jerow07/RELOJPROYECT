@@ -44,7 +44,7 @@ var citadesaludo = document.getElementById("citadesaludo")
 var videofondo = document.getElementById("videoDeFondo")
 
 if(tiempo.getHours() > 19 || tiempo.getHours()< 6 ) {
-    videofondo.setAttribute('src', "paisaje-noche.mp4#t=15")
+    
     citadesaludo.innerHTML = "<ion-icon class='iconoboton' name='moon'></ion-icon><span>Good night, it's currently</span>"
 }
 function deslizar(){
