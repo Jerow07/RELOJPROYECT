@@ -37,15 +37,16 @@ setInterval(function actualizarHora() {
     }
     
     reloj.innerHTML = hora + ":" + minutos + ":" + segundos
-}, 1000)
+}, 1000)    
 
 var citadesaludo = document.getElementById("citadesaludo")
 
-var videofondo = document.getElementById("videoDeFondo")
+var confondo = document.getElementById("confondo")
 
 if(tiempo.getHours() > 19 || tiempo.getHours()< 6 ) {
-     videoDeFondo.innerHTML = img scr="bosque-noche.jpg"
+    
     citadesaludo.innerHTML = "<ion-icon class='iconoboton' name='moon'></ion-icon><span>Good night, it's currently</span>"
+    confondo.style.background = "url('bosque-noche.jpg')no-repeat"
 }
 function deslizar(){
     
